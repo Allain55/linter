@@ -1,0 +1,16 @@
+{
+  "name": "@allain55/linter",
+  "version": "1.0.0",
+  "description": "Allain55's personal ESLint config",
+  "author": "Gergő Lengyel",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Allain55/linter"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^5.4.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-security": "^1.4.0"
+  }
+}
