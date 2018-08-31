@@ -18,10 +18,10 @@ module.exports = {
 	// require super() calls in constructors
 	'constructor-super': 'error',
 	// enforce consistent spacing around * operators in generator functions
-	"generator-star-spacing": [
-		"error", {
-			"before": true,
-			"after": false
+	'generator-star-spacing': [
+		'error', {
+			'before': true,
+			'after' : false
 		}
 	],
 	// disallow reassigning class members

@@ -81,7 +81,7 @@ module.exports = {
 	// Enforce the location of arrow function bodies with implicit returns
 	'implicit-arrow-linebreak': 'error',
 
-	//TODO: ezt csak opcionálisan, tab használatkor
+	// TODO: ezt csak opcionálisan, tab használatkor
 	// enforce consistent indentation
 	// 'indent': [
 	//     'error',
@@ -224,9 +224,8 @@ module.exports = {
 	'object-curly-newline': [
 		'error',
 		{
-			'multiline'    : true,
-			'minProperties': 1,
-			'consistent'   : true
+			'ImportDeclaration': 'never',
+			'ExportDeclaration': 'never'
 		}
 	],
 	// enforce consistent spacing inside braces
@@ -238,7 +237,14 @@ module.exports = {
 		'error'
 	],
 	// enforce variables to be declared either together or separately in functions
-	'one-var': ['error', 'consecutive'],
+	'one-var': [
+		'error',
+		{
+			'let'   		  : 'consecutive',
+			'const'			  : 'consecutive',
+			'separateRequires': true
+		}
+	],
 	// enforce consistent linebreak style for operators
 	'operator-linebreak': [
 		'error',
@@ -256,7 +262,9 @@ module.exports = {
 	// require or disallow padding within blocks
 	'padded-blocks': [
 		'error',
-		'never'
+		{
+			'blocks': 'never'
+		}
 	],
 	// require quotes around object literal property names
 	'quote-props': [
