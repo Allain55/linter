@@ -3,12 +3,12 @@ module.exports = {
 	'array-callback-return': 'warn',
 	// require return statements to either always or never specify values
 	'block-scoped-var': 'error',
+	// require return statements to either always or never specify values
 	'consistent-return': 'error',
+	//todo: ez jelenleg nem megoldható szépen, hogy elfogadja az 1 soros iffet meg a többte is egyszerre
 	// enforce consistent brace style for all control statements
-	'curly': [
-		'error',
-		'all'
-	],
+	// 'curly':
+	
 	// require default cases in switch statements
 	'default-case': 'error',
 	// enforce consistent newlines before and after dots

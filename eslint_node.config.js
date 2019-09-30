@@ -19,6 +19,9 @@ module.exports = {
 		{},
 		nodeJsRules,
 		{
+			'security/detect-object-injection': 'off',
+			'security/detect-non-literal-fs-filename': 'off',
+			'security/detect-non-literal-require': 'off',
 			'node/exports-style': [
 				'error',
 				'module.exports'
