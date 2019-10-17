@@ -5,7 +5,7 @@ My personal ESLint config for Node and the browser
 # Install
 
 ```bash
-npm i lgs-linter
+npm i -D lgs-linter
 ```
 
 Examples:

@@ -3,11 +3,7 @@ const nodeJsRules = require('./rules/node');
 module.exports = {
 	'extends': [
 		'./eslint_shared.config.js',
-		'plugin:node/recommended',
-		'plugin:security/recommended'
-	],
-	'plugins': [
-		'security'
+		'plugin:node/recommended'
 	],
 	'env': {
 		'node': true
@@ -15,21 +11,17 @@ module.exports = {
 	'globals': {
 		'sails': true
 	},
-	'rules': Object.assign(
-		{},
-		nodeJsRules,
-		{
-			'security/detect-object-injection': 'off',
-			'security/detect-non-literal-fs-filename': 'off',
-			'security/detect-non-literal-require': 'off',
+	'rules': {
+		...nodeJsRules,
+		...{
 			'node/exports-style': [
-				'error',
-				'module.exports'
-			],
+			'error',
+			'module.exports'
+		],
 			'node/prefer-global/buffer': [
-				'error',
-				'always'
-			]
+			'error',
+			'always'
+		]
 		}
-	)
+	}
 };

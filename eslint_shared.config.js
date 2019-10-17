@@ -7,7 +7,14 @@ const bestPractises  = require('./rules/best_practises'),
 
 module.exports = {
 	'parserOptions': {
-		'ecmaVersion': 2019
+		'ecmaVersion': 2020
 	},
-	'rules': Object.assign({}, possibleErrors, bestPractises, variables, stylistic, es6Rules, strictRules)
+	'rules': {
+		...possibleErrors,
+		...bestPractises,
+		...variables,
+		...stylistic,
+		...es6Rules,
+		...strictRules
+	}
 };
