@@ -20,6 +20,10 @@ module.exports = {
 	'no-dupe-keys'            : 'error',
 	// disallow duplicate case labels
 	'no-duplicate-case': 'error',
+	// // disallow assigning to imported bindings
+	'no-import-assign': [
+		'error'
+	],
 	// disallow empty character classes in regular expressions
 	'no-empty-character-class': 'error',
 	// disallow empty block statements: if() {}

@@ -46,6 +46,10 @@ module.exports = {
 	'no-var': 'error',
 	// require const declarations for variables that are never reassigned after declared
 	'prefer-const': 'error',
+	// require destructuring from arrays and/or objects
+	'prefer-destructuring': [
+		'error'
+	],
 	'prefer-promise-reject-errors': 'error',
 	// require rest parameters instead of arguments
 	'prefer-rest-params': 'error',

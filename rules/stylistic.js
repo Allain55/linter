@@ -5,7 +5,10 @@ module.exports = {
 		'never'
 	],
 	// enforce line breaks between array elements
-	'array-element-newline': ['error', 'consistent'],
+	'array-element-newline': [
+		'error',
+		'consistent'
+	],
 	// enforce consistent spacing inside single-line blocks
 	'block-spacing': [
 		'error',
@@ -53,6 +56,12 @@ module.exports = {
 		'error',
 		'never'
 	],
+
+	// enforce line breaks between arguments of a function call
+	'function-call-argument-newline': [
+		'error',
+		'consistent'
+	],
 	// require or disallow spacing between function identifiers and their invocations
 	'func-call-spacing': 'error',
 	// enforce the consistent use of either function declarations or expressions
@@ -77,6 +86,10 @@ module.exports = {
 				'$', 'i', 'j'
 			]
 		}
+	],
+	// require identifiers to match a specified regular expression
+	'id-match': [
+		'error'
 	],
 	// Enforce the location of arrow function bodies with implicit returns
 	'implicit-arrow-linebreak': 'error',
@@ -277,17 +290,6 @@ module.exports = {
 		'single',
 		{
 			'avoidEscape': true
-		}
-	],
-	// require JSDoc comments
-	'require-jsdoc': [
-		'warn',
-		{
-			'require': {
-				'FunctionDeclaration': false,
-				'MethodDefinition'   : true,
-				'ClassDeclaration'   : true
-			}
 		}
 	],
 	// enforce consistent spacing before and after semicolons

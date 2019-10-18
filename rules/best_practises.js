@@ -5,12 +5,12 @@ module.exports = {
 	'block-scoped-var': 'error',
 	// require return statements to either always or never specify values
 	'consistent-return': 'error',
-	//todo: ez jelenleg nem megoldható szépen, hogy elfogadja az 1 soros iffet meg a többte is egyszerre
-	// enforce consistent brace style for all control statements
-	// 'curly':
-	
-	// require default cases in switch statements
+	 // require default cases in switch statements
 	'default-case': 'error',
+	 // enforce default parameters to be last
+	'default-param-last': [
+		'error'
+	],
 	// enforce consistent newlines before and after dots
 	'dot-location': [
 		'error',
@@ -122,8 +122,18 @@ module.exports = {
 	'no-useless-return': 'error',
 	// disallow with statements
 	'no-with': 'error',
+	// enforce using named capture group in regular expression
+	'prefer-named-capture-group': [
+		'error'
+	],
+	 // disallow use of the RegExp constructor in favor of regular expression literals
+	'prefer-regex-literals': [
+		'error'
+	],
 	// enforce the use of u flag on RegExp
-	'require-unicode-regexp': 'error',
+	'require-unicode-regexp': [
+		'error'
+	],
 	// require parentheses around immediate function invocations
 	'wrap-iife': [
 		'error',
