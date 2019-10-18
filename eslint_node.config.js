@@ -15,13 +15,13 @@ module.exports = {
 		...nodeJsRules,
 		...{
 			'node/exports-style': [
-			'error',
-			'module.exports'
-		],
+				'error',
+				'module.exports'
+			],
 			'node/prefer-global/buffer': [
-			'error',
-			'always'
-		]
+				'error',
+				'always'
+			]
 		}
 	}
 };

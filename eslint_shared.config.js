@@ -6,6 +6,7 @@ const bestPractises  = require('./rules/best_practises'),
 	  es6Rules 		 = require('./rules/ecmascript_6');
 
 module.exports = {
+	'parser': 'babel-eslint',
 	'parserOptions': {
 		'ecmaVersion': 2020
 	},

@@ -7,8 +7,6 @@ module.exports = {
 	'no-shadow-restricted-names': 'error',
 	// disallow initializing variables to undefined
 	'no-undef-init': 'error',
-	// disallow the use of undefined as an identifier
-	'no-undefined': 'error',
 	// disallow declaration of variables that are not used in the code
 	'no-unused-vars': [
 		'error',

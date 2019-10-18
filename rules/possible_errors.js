@@ -1,5 +1,5 @@
 module.exports = {
-// enforce “for” loop update clause moving the counter in the right direction
+	// enforce “for” loop update clause moving the counter in the right direction
 	'for-direction': [
 		'error'
 	],
@@ -32,15 +32,16 @@ module.exports = {
 	'no-ex-assign'            : 'error',
 	// disallow unnecessary boolean casts: var foo = new Boolean(true); if (!!foo)
 	'no-extra-boolean-cast'   : 'error',
+	//turned off because it doesn't work well for arrow functions
 	// disallow unnecessary parentheses: var a = (2 * 3);
-	'no-extra-parens'         : [
-		'error',
-		'all',
-		{
-			'nestedBinaryExpressions': false
-		}
-	],
-	// disallow unnecessary semicolons: var a;;
+	// 'no-extra-parens'         : [
+	// 	'error',
+	// 	'all',
+	// 	{
+	// 		'nestedBinaryExpressions'		: false
+	// 	}
+	// ],
+	// disallow unnecessary semicolons
 	'no-extra-semi'           : 'error',
 	// disallow reassigning function declarations
 	'no-func-assign': 'error',

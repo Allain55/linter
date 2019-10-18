@@ -45,7 +45,12 @@ module.exports = {
 	// require let or const instead of var
 	'no-var': 'error',
 	// require const declarations for variables that are never reassigned after declared
-	'prefer-const': 'error',
+	'prefer-const': [
+		'error',
+		{
+			'destructuring': 'all'
+		}
+	],
 	// require destructuring from arrays and/or objects
 	'prefer-destructuring': [
 		'error'
@@ -64,6 +69,8 @@ module.exports = {
 	],
 	// require symbol descriptions
 	'symbol-description': 'error',
+
+	// This rule has a known bug: https://github.com/babel/babel-eslint/issues/530 fixed
 	// require or disallow spacing around embedded expressions of template strings
 	'template-curly-spacing': 'error',
 	// require or disallow spacing around the * in yield* expressions
