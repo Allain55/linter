@@ -1,13 +1,8 @@
 module.exports = {
-//  enforce consistent spacing inside array brackets
+	// enforce consistent spacing inside array brackets
 	'array-bracket-spacing': [
 		'error',
 		'never'
-	],
-	// enforce line breaks between array elements
-	'array-element-newline': [
-		'error',
-		'consistent'
 	],
 	// enforce consistent spacing inside single-line blocks
 	'block-spacing': [
@@ -70,7 +65,10 @@ module.exports = {
 		'expression'
 	],
 	// enforce consistent line breaks inside function parentheses
-	'function-paren-newline': 'error',
+	'function-paren-newline': [
+		'error',
+		'consistent'
+	],
 	// disallow specified identifiers
 	'id-blacklist': [
 		'warn',
@@ -81,9 +79,8 @@ module.exports = {
 		'error',
 		{
 			'min': 2,
-			'max': 35,
 			'exceptions': [
-				'$', 'i', 'j'
+				'$', 'i', 'j', '_'
 			]
 		}
 	],
@@ -119,22 +116,38 @@ module.exports = {
 		}
 	],
 	// require or disallow an empty line between class members
-	'lines-between-class-members': 'error',
+	'lines-between-class-members': [
+		'error',
+		'always',
+		{
+			'exceptAfterSingleLine': true
+		}
+	],
 	// enforce a maximum depth that blocks can be nested
 	'max-depth': [
 		'error',
-		6
+		5
 	],
+	//todo put it back
 	// enforce a maximum line length
-	'max-len': [
-		'error',
-		{
-			'code'    : 120,
-			'comments': 120
-		}
-	],
+	// 'max-len': [
+	// 	'warn',
+	// 	{
+	// 		'code'    : 120,
+	// 		'comments': 120
+	// 	}
+	// ],
+	//todo put it back
 	// enforce a maximum number of line of code in a function
-	'max-lines-per-function': ['error', 30],
+	// 'max-lines-per-function': [
+	// 	'warn',
+	// 	{
+	// 		'max': 50,
+	// 		'skipBlankLines': true,
+	// 		'skipComments': true,
+	// 		'IIFEs': true
+	// 	}
+	// ],
 	// enforce a maximum depth that callbacks can be nested
 	'max-nested-callbacks': [
 		'error',
@@ -244,10 +257,7 @@ module.exports = {
 	// enforce consistent spacing inside braces
 	'object-curly-spacing': [
 		'error'
-	],
-	// enforce placing object properties on separate lines
-	'object-property-newline': [
-		'error'
+
 	],
 	// enforce variables to be declared either together or separately in functions
 	'one-var': [

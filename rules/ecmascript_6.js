@@ -53,7 +53,16 @@ module.exports = {
 	],
 	// require destructuring from arrays and/or objects
 	'prefer-destructuring': [
-		'error'
+		'error',
+		{
+			'VariableDeclarator': {
+				'array': true,
+				'object': true
+			}
+		},
+		{
+			'enforceForRenamedProperties': false
+		}
 	],
 	'prefer-promise-reject-errors': 'error',
 	// require rest parameters instead of arguments

@@ -3,8 +3,16 @@ module.exports = {
 	'array-callback-return': 'warn',
 	// require return statements to either always or never specify values
 	'block-scoped-var': 'error',
+	// enforce a maximum cyclomatic complexity allowed in a program
+	'complexity': [
+		'error',
+		11
+	],
 	// require return statements to either always or never specify values
 	'consistent-return': 'error',
+	//todo: ez jelenleg nem megoldható szépen, hogy elfogadja az 1 soros iffet meg a többet is egyszerre
+	// enforce consistent brace style for all control statements
+	// 'curly':
 	 // require default cases in switch statements
 	'default-case': 'error',
 	 // enforce default parameters to be last
