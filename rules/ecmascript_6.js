@@ -56,7 +56,7 @@ module.exports = {
 		'error',
 		{
 			'VariableDeclarator': {
-				'array': true,
+				'array'	: true,
 				'object': true
 			}
 		},
@@ -81,7 +81,7 @@ module.exports = {
 
 	// This rule has a known bug: https://github.com/babel/babel-eslint/issues/530 fixed
 	// require or disallow spacing around embedded expressions of template strings
-	'template-curly-spacing': 'error',
+	// 'template-curly-spacing': 'error',
 	// require or disallow spacing around the * in yield* expressions
 	'yield-star-spacing': [
 		'error',
