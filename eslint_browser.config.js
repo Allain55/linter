@@ -1,6 +1,5 @@
 module.exports = {
 	'extends': [
-		'align-assignments',
 		'./eslint_shared.config.js'
 	],
 	'env': {
@@ -9,5 +8,8 @@ module.exports = {
 	},
 	'parserOptions': {
 		'sourceType': 'module'
+	},
+	'rules': {
+		'prefer-named-capture-group': 'off' // bad support and no transpile available
 	}
 };

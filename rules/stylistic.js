@@ -118,26 +118,24 @@ module.exports = {
 		'error',
 		5
 	],
-	//todo put it back
 	// enforce a maximum line length
-	// 'max-len': [
-	// 	'warn',
-	// 	{
-	// 		'code'    : 120,
-	// 		'comments': 120
-	// 	}
-	// ],
-	//todo put it back
+	'max-len': [
+		'warn',
+		{
+			'code'    : 120,
+			'comments': 120
+		}
+	],
 	// enforce a maximum number of line of code in a function
-	// 'max-lines-per-function': [
-	// 	'warn',
-	// 	{
-	// 		'max': 50,
-	// 		'skipBlankLines': true,
-	// 		'skipComments': true,
-	// 		'IIFEs': true
-	// 	}
-	// ],
+	'max-lines-per-function': [
+		'warn',
+		{
+			'max': 50,
+			'skipBlankLines': true,
+			'skipComments': true,
+			'IIFEs': true
+		}
+	],
 	// enforce a maximum depth that callbacks can be nested
 	'max-nested-callbacks': [
 		'error',
@@ -191,7 +189,7 @@ module.exports = {
 	],
 	// disallow if statements as the only statement in else blocks
 	'no-lonely-if': [
-		'warn'
+		'error'
 	],
 	// Disallow mixes of different operators
 	'no-mixed-operators': [
@@ -240,8 +238,7 @@ module.exports = {
 	'object-curly-newline': [
 		'error',
 		{
-			'ImportDeclaration': 'never',
-			'ExportDeclaration': 'never'
+			'consistent': true
 		}
 	],
 	// enforce consistent spacing inside braces

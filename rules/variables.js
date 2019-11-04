@@ -1,6 +1,14 @@
 module.exports = {
 	// disallow deleting variables
 	'no-delete-var': 'error',
+	// disallow specified global variables
+	'no-restricted-globals': [
+		'error',
+		{
+			'name': 'isNaN',
+			'message': 'Use Number.isNaN'
+		}
+	],
 	// disallow var declarations from shadowing variables in the outer scope
 	'no-shadow': 'error',
 	//  disallow identifiers from shadowing restricted names

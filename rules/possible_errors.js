@@ -75,7 +75,7 @@ module.exports = {
 	'use-isnan'               : 'error',
 	// enforce valid JSDoc comments
 	'valid-jsdoc'             : [
-		'error',
+		'warn',
 		{
 			'requireParamDescription' : false,
 			'requireReturn'           : false,
