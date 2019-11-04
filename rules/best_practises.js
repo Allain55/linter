@@ -5,7 +5,7 @@ module.exports = {
 	'block-scoped-var': 'error',
 	// enforce a maximum cyclomatic complexity allowed in a program
 	'complexity': [
-		'error',
+		'warn',
 		11
 	],
 	// require return statements to either always or never specify values
@@ -132,7 +132,7 @@ module.exports = {
 	'no-with': 'error',
 	// enforce using named capture group in regular expression
 	'prefer-named-capture-group': [
-		'error'
+		'warn'
 	],
 	 // disallow use of the RegExp constructor in favor of regular expression literals
 	'prefer-regex-literals': [

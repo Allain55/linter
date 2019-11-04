@@ -90,37 +90,27 @@ module.exports = {
 	],
 	// Enforce the location of arrow function bodies with implicit returns
 	'implicit-arrow-linebreak': 'error',
-
-	// TODO: ezt csak opcionálisan, tab használatkor
 	// enforce consistent indentation
-	// 'indent': [
-	//     'error',
-	//     'tab',
-	//     {
-	//         'VariableDeclarator': {
-	//             'var': 1,
-	//             'let': 1,
-	//             'const': 1
-	//         },
-	// 	// chaining-nél így a jQuery selectorokat figyelmen kívül hagyja
-	// 	'ignoredNodes': ['MemberExpression'],
-	//         'ObjectExpression': 1
-	//     }
-	// ],
+	'indent': [
+		'error',
+		'tab', //todo: use 2 spaces and "first" for consts?
+		{
+			'MemberExpression': 'off',
+			'VariableDeclarator': 1,
+			'ObjectExpression': 'first',
+			'FunctionDeclaration': {
+				'body'		: 1,
+				'parameters': 'first'
+			},
+			'ignoredNodes': ['ConditionalExpression']
+		}
+	],
 	// enforce consistent spacing before and after keywords
 	'keyword-spacing': [
 		'error',
 		{
 			'before': true,
 			'after': true
-		}
-	],
-	// require or disallow an empty line between class members
-	'lines-between-class-members': [
-		'error',
-		'always',
-		{
-			'exceptAfterSingleLine': true
 		}
 	],
 	// enforce a maximum depth that blocks can be nested
@@ -188,7 +178,7 @@ module.exports = {
 	'newline-per-chained-call': [
 		'error',
 		{
-			'ignoreChainWithDepth': 3
+			'ignoreChainWithDepth': 4
 		}
 	],
 	// disallow Array constructors
@@ -218,7 +208,7 @@ module.exports = {
 	],
 	// disallow negated conditions
 	'no-negated-condition': [
-		'warn'
+		'error'
 	],
 	// disallow nested ternary expressions
 	'no-nested-ternary': [
@@ -257,7 +247,6 @@ module.exports = {
 	// enforce consistent spacing inside braces
 	'object-curly-spacing': [
 		'error'
-
 	],
 	// enforce variables to be declared either together or separately in functions
 	'one-var': [
@@ -271,7 +260,13 @@ module.exports = {
 	// enforce consistent linebreak style for operators
 	'operator-linebreak': [
 		'error',
-		'after'
+		'after',
+		{
+			'overrides': {
+				'?': 'before',
+				':': 'before'
+			}
+		}
 	],
 	// Require or disallow padding lines between statements
 	'padding-line-between-statements': [

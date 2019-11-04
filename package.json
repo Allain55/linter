@@ -1,6 +1,6 @@
 {
   "name": "@allain55/linter",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "Allain55's personal ESLint config",
   "author": "Gergő Lengyel",
   "repository": {
@@ -11,6 +11,7 @@
   "dependencies": {
     "babel-eslint": "^10.0.3",
     "eslint": "^6.6.0",
+    "eslint-plugin-align-assignments": "^1.1.2",
     "eslint-plugin-jsdoc": "^15.12.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-unicorn": "^12.1.0"
