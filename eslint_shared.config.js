@@ -10,12 +10,46 @@ module.exports = {
 	'parserOptions': {
 		'ecmaVersion': 2020
 	},
+	'extends': [
+		'plugin:unicorn/recommended'
+	],
 	'rules': {
 		...possibleErrors,
 		...bestPractises,
 		...variables,
 		...stylistic,
 		...es6Rules,
-		...strictRules
+		...strictRules,
+		'unicorn/catch-error-name': [
+			'error',
+			{
+				'name': 'err'
+			}
+		],
+		'unicorn/filename-case': [
+			'error',
+			{
+				'cases': {
+					'camelCase': true,
+					'pascalCase': true
+				}
+			}
+		],
+		'unicorn/prevent-abbreviations': 'off',
+		'unicorn/explicit-length-check': 'off',
+
+		'jsdoc/check-alignment': 'error',
+		'jsdoc/check-indentation': 'error',
+		// 'jsdoc/check-syntax': 'error', //todo
+		'jsdoc/check-tag-names': 'error',
+		'jsdoc/check-types': 'error',
+		'jsdoc/implements-on-classes': 'error',
+		'jsdoc/require-jsdoc': 'error',
+		'jsdoc/require-param': 'error',
+		'jsdoc/require-param-name': 'error',
+		'jsdoc/require-returns': 'error',
+		'jsdoc/require-returns-check': 'error',
+		'jsdoc/require-returns-type': 'error',
+		'jsdoc/valid-types': 'error'
 	}
 };

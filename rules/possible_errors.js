@@ -73,31 +73,6 @@ module.exports = {
 	'require-atomic-updates': 'error',
 	//  require calls to isNaN() when checking for NaN
 	'use-isnan'               : 'error',
-	// enforce valid JSDoc comments
-	'valid-jsdoc'             : [
-		'warn',
-		{
-			'requireParamDescription' : false,
-			'requireReturn'           : false,
-			'requireReturnType'       : true,
-			'requireReturnDescription': false,
-			'prefer': {
-				'arg'   : 'param',
-				'return': 'returns'
-			},
-			'preferType': {
-				'object' : 'Object',
-				'{}'     : 'Object',
-				'array'  : 'Array',
-				'[]'     : 'Array',
-				'Number' : 'number',
-				'String' : 'string',
-				'Boolean': 'boolean',
-				'$'      : 'jQuery'
-			}
-		}
-
-	],
 	// enforce comparing typeof expressions against valid strings
 	'valid-typeof'            : 'error'
 };
