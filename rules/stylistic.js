@@ -102,7 +102,11 @@ module.exports = {
 				'body'		: 1,
 				'parameters': 'first'
 			},
-			'ignoredNodes': ['ConditionalExpression']
+			/*
+				todo this rule has a known bug: https://github.com/babel/babel-eslint/issues/530
+				 remove the "TemplateLiteral" when it's fixed
+			 */
+			'ignoredNodes': ['ConditionalExpression', "TemplateLiteral"]
 		}
 	],
 	// enforce consistent spacing before and after keywords
