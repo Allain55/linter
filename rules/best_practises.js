@@ -49,6 +49,13 @@ module.exports = {
 	'no-empty-pattern': 'error',
 	// disallow null comparisons without type-checking operators
 	'no-eq-null': 'error',
+	// disallow empty functions
+	'no-empty-function': [
+		'error',
+		{
+			'allow': ['methods']
+		}
+	],
 	// disallow the use of eval()
 	'no-eval': 'error',
 	// disallow extending native types

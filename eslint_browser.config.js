@@ -10,6 +10,7 @@ module.exports = {
 		'sourceType': 'module'
 	},
 	'rules': {
-		'prefer-named-capture-group': 'off' // bad support and no transpile available
+		'prefer-named-capture-group': 'off', // bad support and no transpile available
+		'require-unicode-regexp': 'off', // bad support, not worth transpiling
 	}
 };

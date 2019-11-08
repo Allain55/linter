@@ -271,7 +271,12 @@ module.exports = {
 		{
 			'blankLine': 'always',
 			'prev': '*',
-			'next': ['break', 'cjs-export', 'class', 'const', 'for', 'if', 'let', 'return', 'try', 'var']
+			'next': ['break', 'cjs-export', 'class', 'let', 'const', 'for', 'if', 'return', 'try']
+		},
+		{
+			'blankLine': 'always',
+			'prev': ['for', 'if', 'try'],
+			'next': '*'
 		}
 	],
 	// require or disallow padding within blocks
@@ -327,6 +332,10 @@ module.exports = {
 	// enforce consistent spacing after the // or /* in a comment
 	'spaced-comment': [
 		'error'
+	],
+	'template-tag-spacing': [
+		'error',
+		'never'
 	],
 	// require parenthesis around regex literals
 	'wrap-regex': [

@@ -6,13 +6,23 @@ const bestPractises  = require('./rules/best_practises'),
 	  es6Rules 		 = require('./rules/ecmascript_6');
 
 module.exports = {
+	'extends': [
+		'plugin:unicorn/recommended'
+	],
+	'plugins': [
+		'jsdoc'
+	],
+	'settings': {
+		'jsdoc': {
+			'preferredTypes': {
+				'object': 'Object'
+			}
+		}
+	},
 	'parser': 'babel-eslint',
 	'parserOptions': {
 		'ecmaVersion': 2020
 	},
-	'extends': [
-		'plugin:unicorn/recommended'
-	],
 	'rules': {
 		...possibleErrors,
 		...bestPractises,
@@ -44,7 +54,6 @@ module.exports = {
 		'jsdoc/check-tag-names': 'error',
 		'jsdoc/check-types': 'error',
 		'jsdoc/implements-on-classes': 'error',
-		'jsdoc/require-jsdoc': 'error',
 		'jsdoc/require-param': 'error',
 		'jsdoc/require-param-name': 'error',
 		'jsdoc/require-returns': 'error',
