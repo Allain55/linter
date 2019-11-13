@@ -293,7 +293,7 @@ module.exports = {
 	// require quotes around object literal property names
 	'quote-props': [
 		'error',
-		'consistent'
+		'always'
 	],
 	// enforce the consistent use of either backticks, double, or single quotes
 	'quotes': [
