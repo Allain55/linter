@@ -109,6 +109,16 @@ module.exports = {
 			'ignoredNodes': ['ConditionalExpression', "TemplateLiteral"]
 		}
 	],
+	// enforce consistent spacing between keys and values in object literal properties
+	'key-spacing': [
+		'error',
+		{
+			beforeColon: false,
+			// afterColon: false, // use this to delete old tab alignments
+			afterColon: true,
+			align: 'colon'
+		}
+	],
 	// enforce consistent spacing before and after keywords
 	'keyword-spacing': [
 		'error',
