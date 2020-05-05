@@ -49,13 +49,17 @@ module.exports = {
 		'unicorn/explicit-length-check': 'off',
 
 		'jsdoc/check-alignment': 'error',
+		'jsdoc/check-examples': 'error',
 		'jsdoc/check-indentation': 'error',
-		// 'jsdoc/check-syntax': 'error', //todo
+		'jsdoc/check-property-names': 'error',
+		'jsdoc/check-syntax': 'error',
 		'jsdoc/check-tag-names': 'error',
 		'jsdoc/check-types': 'error',
+		'jsdoc/empty-tags': 'error',
 		'jsdoc/implements-on-classes': 'error',
 		'jsdoc/require-param': 'error',
 		'jsdoc/require-param-name': 'error',
+		'jsdoc/require-property': 'error',
 		'jsdoc/require-returns': 'error',
 		'jsdoc/require-returns-check': 'error',
 		'jsdoc/require-returns-type': 'error',
