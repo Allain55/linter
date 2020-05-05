@@ -71,8 +71,8 @@ module.exports = {
 	],
 	// disallow specified identifiers
 	'id-blacklist': [
-		'warn',
-		'data'
+		'error',
+		'datas'
 	],
 	// enforce minimum and maximum identifier lengths
 	'id-length': [
@@ -91,24 +91,24 @@ module.exports = {
 	// Enforce the location of arrow function bodies with implicit returns
 	'implicit-arrow-linebreak': 'error',
 	// enforce consistent indentation
-	'indent': [
-		'error',
-		'tab', //todo: use 2 spaces and "first" for consts?
-		{
-			'MemberExpression': 'off',
-			'VariableDeclarator': 1,
-			'ObjectExpression': 'first',
-			'FunctionDeclaration': {
-				'body'		: 1,
-				'parameters': 'first'
-			},
-			/*
-				todo this rule has a known bug: https://github.com/babel/babel-eslint/issues/530
-				 remove the "TemplateLiteral" when it's fixed
-			 */
-			'ignoredNodes': ['ConditionalExpression', "TemplateLiteral"]
-		}
-	],
+	// 'indent': [
+	// 	'error',
+	// 	'tab', //todo: use 2 spaces and "first" for consts?
+	// 	{
+	// 		'MemberExpression': 'off',
+	// 		'VariableDeclarator': 'first',
+	// 		'ObjectExpression': 'first',
+	// 		'FunctionDeclaration': {
+	// 			'body'		: 1,
+	// 			'parameters': 'first'
+	// 		},
+	// 		/*
+	// 			todo this rule has a known bug: https://github.com/babel/babel-eslint/issues/530
+	// 			 remove the "TemplateLiteral" when it's fixed
+	// 		 */
+	// 		'ignoredNodes': ['ConditionalExpression', "TemplateLiteral"]
+	// 	}
+	// ],
 	// enforce consistent spacing between keys and values in object literal properties
 	'key-spacing': [
 		'error',
@@ -326,7 +326,11 @@ module.exports = {
 	// enforce consistent spacing before function definition opening parenthesis
 	'space-before-function-paren': [
 		'error',
-		'never'
+		{
+			'anonymous' : 'never',
+			'asyncArrow': 'always',
+			'named'     : 'never'
+		}
 	],
 	// enforce consistent spacing inside parentheses
 	'space-in-parens': [
