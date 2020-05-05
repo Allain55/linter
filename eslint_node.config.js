@@ -11,30 +11,5 @@ module.exports = {
 	'globals': {
 		'sails': true
 	},
-	'rules': {
-		...nodeJsRules,
-		...{
-			'node/no-unpublished-require': 'off',
-			'node/exports-style': [
-				'error',
-				'module.exports'
-			],
-			'node/prefer-global/buffer': [
-				'error',
-				'always'
-			],
-			// todo enable this
-			// 'jsdoc/require-jsdoc': [
-			// 	'error',
-			// 	{
-			// 		'require': {
-			// 			'ArrowFunctionExpression': true,
-			// 			'ClassExpression': true,
-			// 			'FunctionExpression': true,
-			// 			'MethodDefinition': true
-			// 		}
-			// 	}
-			// ]
-		}
-	}
+	'rules': nodeJsRules
 };

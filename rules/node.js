@@ -1,18 +1,40 @@
 module.exports = {
 	// Enforce Return After Callback
-	'callback-return': 'error',
+	'node/callback-return': 'error',
+	// disallow deprecated APIs
+	'node/no-deprecated-api': 'error',
 	// require require() calls to be placed at top-level module scope
-	'global-require': 'error',
+	'node/global-require': 'error',
 	// require error handling in callbacks
-	'handle-callback-err': 'error',
-	// disallow use of the Buffer() constructor
-	'no-buffer-constructor': 'error',
+	'node/handle-callback-err': 'error',
 	// disallow new operators with calls to require
-	'no-new-require': 'error',
+	'node/no-new-require': 'error',
 	// disallow string concatenation with __dirname and __filename
-	'no-path-concat': 'error',
+	'node/no-path-concat': 'error',
 	// disallow the use of process.exit()
-	'no-process-exit': 'error',
+	'node/no-process-exit': 'error',
 	// disallow synchronous methods
-	'no-sync': 'error'
+	'node/no-sync': 'error',
+	
+	'node/no-unpublished-require': 'off',
+	'node/exports-style': [
+		'error',
+		'module.exports'
+	],
+	'node/prefer-global/buffer': [
+		'error',
+		'always'
+	],
+	// todo enable this
+	// 'jsdoc/require-jsdoc': [
+	// 	'error',
+	// 	{
+	// 		'require': {
+	// 			'ArrowFunctionExpression': true,
+	// 			'ClassExpression': true,
+	// 			'FunctionExpression': true,
+	// 			'MethodDefinition': true
+	// 		}
+	// 	}
+	// ]
 };
