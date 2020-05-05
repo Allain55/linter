@@ -80,7 +80,7 @@ module.exports = {
 		{
 			'min': 2,
 			'exceptions': [
-				'$', 'i', 'j', '_'
+				'$', 'i', 'j', '_', 'a', 'b'
 			]
 		}
 	],
@@ -166,11 +166,6 @@ module.exports = {
 		{
 			'max': 1
 		}
-	],
-	// enforce a particular style for multiline comments
-	'multiline-comment-style': [
-		'error',
-		'starred-block'
 	],
 	// require constructor function names to begin with a capital letter
 	'new-cap': [
@@ -300,6 +295,8 @@ module.exports = {
 			'blocks': 'never'
 		}
 	],
+	// disallow the use of `Math.pow` in favor of the `**` operator
+	'prefer-exponentiation-operator': 'error',
 	// require quotes around object literal property names
 	'quote-props': [
 		'error',

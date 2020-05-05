@@ -33,6 +33,11 @@ module.exports = {
 		'warn',
 		'smart'
 	],
+	// require grouped accessor pairs in object literals and classes
+	'grouped-accessor-pairs': [
+		'error',
+		'getBeforeSet'
+	],
 	// enforce a maximum number of classes per file
 	'max-classes-per-file': ['error', 1],
 	// disallow the use of alert, confirm, and prompt

@@ -16,14 +16,12 @@ module.exports = {
 	'no-debugger'             : 'error',
 	// disallow duplicate arguments in function definitions: function(a, a) {
 	'no-dupe-args'            : 'error',
+	// disallow duplicate conditions in if-else-if chains
+	'no-dupe-else-if': 'error',
 	// disallow duplicate keys in object literals
 	'no-dupe-keys'            : 'error',
 	// disallow duplicate case labels
 	'no-duplicate-case': 'error',
-	// // disallow assigning to imported bindings
-	'no-import-assign': [
-		'error'
-	],
 	// disallow empty character classes in regular expressions
 	'no-empty-character-class': 'error',
 	// disallow empty block statements: if() {}
@@ -45,6 +43,10 @@ module.exports = {
 	'no-extra-semi'           : 'error',
 	// disallow reassigning function declarations
 	'no-func-assign': 'error',
+	// disallow assigning to imported bindings
+	'no-import-assign': [
+		'error'
+	],
 	// disallow function or var declarations in nested blocks : if (true) { function f() {} }
 	'no-inner-declarations'   : 'error',
 	// disallow invalid regular expression strings in RegExp constructors
@@ -57,6 +59,8 @@ module.exports = {
 	'no-prototype-builtins'   : 'error',
 	//  disallow multiple spaces in regular expression literals
 	'no-regex-spaces'         : 'warn',
+	// disallow returning values from setters
+	'no-setter-return'        : 'error',
 	// disallow sparse arrays
 	'no-sparse-arrays'        : 'error',
 	// disallow confusing multiline expressions
