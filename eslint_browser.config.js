@@ -12,5 +12,7 @@ module.exports = {
 	'rules': {
 		'prefer-named-capture-group': 'off', // bad support and no transpile available
 		'require-unicode-regexp': 'off', // bad support, not worth transpiling
+		// No Node.js builtin modules
+		'import/no-nodejs-modules': 'error',
 	}
 };

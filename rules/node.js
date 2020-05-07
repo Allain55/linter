@@ -25,7 +25,7 @@ module.exports = {
 		'error',
 		'always'
 	],
-	// todo enable this
+	// todo document everything and enable this
 	// 'jsdoc/require-jsdoc': [
 	// 	'error',
 	// 	{

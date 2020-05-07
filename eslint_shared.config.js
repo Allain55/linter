@@ -7,7 +7,8 @@ const bestPractises  = require('./rules/best_practises'),
 
 module.exports = {
 	'extends': [
-		'plugin:unicorn/recommended'
+		'plugin:unicorn/recommended',
+		'plugin:import/recommended'
 	],
 	'plugins': [
 		'jsdoc'
@@ -30,6 +31,37 @@ module.exports = {
 		...stylistic,
 		...es6Rules,
 		...strictRules,
+		
+		// Enforce a newline after import statements
+		'import/newline-after-import': 'error',
+		// Report repeated import of the same module in multiple places
+		'import/no-duplicates': 'error',
+		// Enforce a leading comment with the webpackChunkName for dynamic imports
+		'import/dynamic-import-chunkname': 'error',
+		// Ensure all exports appear after other statements
+		'import/exports-last': 'error',
+		// Ensure consistent use of file extension within the import path
+		'import/extensions': ['error', 'never'],
+		// Ensure all imports appear before other statements
+		'import/first': 'error',
+		// Prefer named exports to be grouped together in a single export declaration
+		'import/group-exports': 'error',
+		// Limit the maximum number of dependencies a module can have
+		'import/max-dependencies': [
+			'warn',
+			{
+				'max': 10
+			}
+		],
+		// Forbid a module from importing a module with a dependency path back to itself
+		'import/no-cycle': 'error',
+		// Forbid named default exports
+		'import/no-named-default': 'error',
+		// Prevent unnecessary path segments in import and require statements
+		'import/no-useless-path-segments': 'error',
+		// Enforce a convention in module import order
+		'import/order': 'error',
+		
 		'unicorn/catch-error-name': [
 			'error',
 			{
