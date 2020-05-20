@@ -14,5 +14,14 @@ module.exports = {
 		'require-unicode-regexp': 'off', // bad support, not worth transpiling
 		// No Node.js builtin modules
 		'import/no-nodejs-modules': 'error',
+		// Ensure imports point to a file/module that can be resolved
+		'import/no-unresolved': [
+			'error',
+			{
+				'ignore': [
+					'^@' // ignore if the module name starts with @
+				]
+			}
+		]
 	}
 };
