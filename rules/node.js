@@ -25,16 +25,17 @@ module.exports = {
 		'error',
 		'always'
 	],
-	// todo document everything and enable this
-	// 'jsdoc/require-jsdoc': [
-	// 	'error',
-	// 	{
-	// 		'require': {
-	// 			'ArrowFunctionExpression': true,
-	// 			'ClassExpression': true,
-	// 			'FunctionExpression': true,
-	// 			'MethodDefinition': true
-	// 		}
-	// 	}
-	// ]
+	'jsdoc/require-jsdoc': [
+		'error',
+		{
+			'exemptEmptyFunctions': true,
+			'require': {
+				'ClassDeclaration': false,
+				'ClassExpression': true,
+				'ArrowFunctionExpression': true,
+				'FunctionExpression': true,
+				'MethodDefinition': true
+			}
+		}
+	]
 };

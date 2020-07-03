@@ -3,6 +3,8 @@ module.exports = {
 	'for-direction': [
 		'error'
 	],
+	// disallow using an async function as a Promise executor
+	'no-async-promise-executor': 'error',
 	// disallow await inside of loops
 	'no-await-in-loop': 'error',
 	// disallow assignment in conditional expressions: if (a = 1)
@@ -55,6 +57,10 @@ module.exports = {
 	'no-irregular-whitespace' : 'warn',
 	// disallow calling global object properties as functions
 	'no-obj-calls'            : 'error',
+	// disallow literal numbers that lose precision
+	'no-loss-of-precision'    : 'error',
+	// disallow returning values from Promise executor functions
+	'no-promise-executor-return': 'error',
 	// disallow use of Object.prototypes builtins directly
 	'no-prototype-builtins'   : 'error',
 	//  disallow multiple spaces in regular expression literals
@@ -67,12 +73,12 @@ module.exports = {
 	'no-unexpected-multiline': 'error',
 	// isallow unreachable code after return, throw, continue, and break statements
 	'no-unreachable'          : 'error',
+	// disallow loops with a body that allows only one iteration
+	'no-unreachable-loop'          : 'error',
 	// disallow control flow statements in finally blocks
 	'no-unsafe-finally'       : 'error',
 	// disallow negating the left operand of relational operators
 	'no-unsafe-negation': 'error',
-	// disallow using an async function as a Promise executor
-	'no-async-promise-executor': 'error',
 	// disallow assignments that can lead to race conditions due to usage of await or yield
 	'require-atomic-updates': 'error',
 	//  require calls to isNaN() when checking for NaN

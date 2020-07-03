@@ -15,6 +15,7 @@ module.exports = {
 	],
 	'settings': {
 		'jsdoc': {
+			'mode': 'typescript',
 			'preferredTypes': {
 				'object': 'Object'
 			}
@@ -62,6 +63,7 @@ module.exports = {
 		// Enforce a convention in module import order
 		'import/order': 'error',
 		
+		'unicorn/better-regex': 'error',
 		'unicorn/catch-error-name': [
 			'error',
 			{
@@ -77,6 +79,14 @@ module.exports = {
 				}
 			}
 		],
+		'unicorn/no-null': 'off',
+		'unicorn/no-reduce': 'off',
+		'unicorn/no-unreadable-array-destructuring': 'error',
+		'unicorn/no-useless-undefined': 'error',
+		'unicorn/prefer-number-properties': 'off',
+		'unicorn/prefer-optional-catch-binding': 'error',
+		'unicorn/prefer-replace-all': 'error',
+		'unicorn/prefer-trim-start-end': 'error',
 		'unicorn/prevent-abbreviations': 'off',
 		'unicorn/explicit-length-check': 'off',
 
@@ -89,6 +99,8 @@ module.exports = {
 		'jsdoc/check-types': 'error',
 		'jsdoc/empty-tags': 'error',
 		'jsdoc/implements-on-classes': 'error',
+		// todo: types need to be imported for every file in order to enable this
+		// 'jsdoc/no-undefined-types': 'error',
 		'jsdoc/require-param': 'error',
 		'jsdoc/require-param-name': 'error',
 		'jsdoc/require-property': 'error',
