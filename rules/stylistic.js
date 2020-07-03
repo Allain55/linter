@@ -194,7 +194,7 @@ module.exports = {
 	],
 	// disallow bitwise operators
 	'no-bitwise': [
-		'warn'
+		'error'
 	],
 	// disallow if statements as the only statement in else blocks
 	'no-lonely-if': [
@@ -233,7 +233,7 @@ module.exports = {
 	],
 	// disallow trailing whitespace at the end of lines
 	'no-trailing-spaces': [
-		'warn'
+		'error'
 	],
 	// disallow ternary operators when simpler alternatives exist
 	'no-unneeded-ternary': [

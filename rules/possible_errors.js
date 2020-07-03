@@ -32,15 +32,6 @@ module.exports = {
 	'no-ex-assign'            : 'error',
 	// disallow unnecessary boolean casts: var foo = new Boolean(true); if (!!foo)
 	'no-extra-boolean-cast'   : 'error',
-	//turned off because it doesn't work well for arrow functions
-	// disallow unnecessary parentheses: var a = (2 * 3);
-	// 'no-extra-parens'         : [
-	// 	'error',
-	// 	'all',
-	// 	{
-	// 		'nestedBinaryExpressions'		: false
-	// 	}
-	// ],
 	// disallow unnecessary semicolons
 	'no-extra-semi'           : 'error',
 	// disallow reassigning function declarations
@@ -54,7 +45,7 @@ module.exports = {
 	// disallow invalid regular expression strings in RegExp constructors
 	'no-invalid-regexp'       : 'error',
 	// disallow irregular whitespace outside of strings and comments
-	'no-irregular-whitespace' : 'warn',
+	'no-irregular-whitespace' : 'error',
 	// disallow calling global object properties as functions
 	'no-obj-calls'            : 'error',
 	// disallow literal numbers that lose precision
@@ -64,7 +55,7 @@ module.exports = {
 	// disallow use of Object.prototypes builtins directly
 	'no-prototype-builtins'   : 'error',
 	//  disallow multiple spaces in regular expression literals
-	'no-regex-spaces'         : 'warn',
+	'no-regex-spaces'         : 'error',
 	// disallow returning values from setters
 	'no-setter-return'        : 'error',
 	// disallow sparse arrays

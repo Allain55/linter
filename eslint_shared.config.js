@@ -79,10 +79,11 @@ module.exports = {
 				}
 			}
 		],
+		'unicorn/no-fn-reference-in-iterator': 'off',
 		'unicorn/no-null': 'off',
 		'unicorn/no-reduce': 'off',
 		'unicorn/no-unreadable-array-destructuring': 'error',
-		'unicorn/no-useless-undefined': 'error',
+		'unicorn/no-useless-undefined': 'off',
 		'unicorn/prefer-number-properties': 'off',
 		'unicorn/prefer-optional-catch-binding': 'error',
 		'unicorn/prefer-replace-all': 'error',

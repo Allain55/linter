@@ -1,6 +1,6 @@
 module.exports = {
-// enforce return statements in callbacks of array methods
-	'array-callback-return': 'warn',
+	// enforce return statements in callbacks of array methods
+	'array-callback-return': 'error',
 	// require return statements to either always or never specify values
 	'block-scoped-var': 'error',
 	// enforce a maximum cyclomatic complexity allowed in a program
@@ -30,7 +30,7 @@ module.exports = {
 	'dot-notation': 'error',
 	// require the use of === and !==
 	'eqeqeq': [
-		'warn',
+		'error',
 		'smart'
 	],
 	// require grouped accessor pairs in object literals and classes
@@ -76,7 +76,7 @@ module.exports = {
 	// disallow assignments to native objects or read-only global variables
 	'no-global-assign': 'error',
 	// disallow var and named function declarations in the global scope
-	'no-implicit-globals': 'warn',
+	'no-implicit-globals': 'error',
 	// disallow the use of eval()-like methods
 	'no-implied-eval': 'error',
 	// disallow the use of the __iterator__ property
