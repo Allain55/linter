@@ -1,6 +1,6 @@
 module.exports = {
-	// Enforce Return After Callback
-	'node/callback-return': 'error',
+	// disallow initializing variables to `undefined`
+	'no-undef': 'error',
 	// disallow deprecated APIs
 	'node/no-deprecated-api': 'error',
 	// require require() calls to be placed at top-level module scope
@@ -16,7 +16,6 @@ module.exports = {
 	// disallow synchronous methods
 	'node/no-sync': 'error',
 	
-	'node/no-unpublished-require': 'off',
 	'node/exports-style': [
 		'error',
 		'module.exports'
@@ -25,6 +24,10 @@ module.exports = {
 		'error',
 		'always'
 	],
+	'unicorn/no-process-exit': 'off', // rule already provided by the node plugin
+	'unicorn/prefer-optional-catch-binding': 'error',
+	'unicorn/prefer-replace-all': 'error',
+	'node/no-unpublished-require': 'off',
 	'jsdoc/require-jsdoc': [
 		'error',
 		{

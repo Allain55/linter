@@ -9,7 +9,9 @@ module.exports = {
 		'node': true
 	},
 	'globals': {
-		'sails': true
+		'sails'    : true,
+		'logger'   : true,
+		'tinyUtils': true,
 	},
 	'rules': nodeJsRules
 };

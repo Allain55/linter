@@ -12,6 +12,7 @@ module.exports = {
 	'rules': {
 		'prefer-named-capture-group': 'off', // bad support and no transpile available
 		'require-unicode-regexp': 'off', // bad support, not worth transpiling
+		'import/dynamic-import-chunkname': 'off',
 		// No Node.js builtin modules
 		'import/no-nodejs-modules': 'error',
 		// Ensure imports point to a file/module that can be resolved
@@ -22,6 +23,7 @@ module.exports = {
 					'^@' // ignore if the module name starts with @
 				]
 			}
-		]
+		],
+		'unicorn/prefer-set-has': 'off'
 	}
 };
