@@ -70,7 +70,7 @@ module.exports = {
 		'consistent'
 	],
 	// disallow specified identifiers
-	'id-blacklist': [
+	'id-denylist': [
 		'error',
 		'datas'
 	],

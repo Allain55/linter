@@ -25,12 +25,12 @@ module.exports = {
 		'always'
 	],
 	'unicorn/no-process-exit': 'off', // rule already provided by the node plugin
-	'unicorn/prefer-optional-catch-binding': 'error',
 	'unicorn/prefer-replace-all': 'error',
 	'node/no-unpublished-require': 'off',
 	'jsdoc/require-jsdoc': [
 		'error',
 		{
+			'enableFixer': false,
 			'exemptEmptyFunctions': true,
 			'require': {
 				'ClassDeclaration': false,
