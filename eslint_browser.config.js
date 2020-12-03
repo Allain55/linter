@@ -13,6 +13,16 @@ module.exports = {
 		'prefer-named-capture-group': 'off', // bad support and no transpile available
 		'require-unicode-regexp': 'off', // bad support, not worth transpiling
 		'import/dynamic-import-chunkname': 'off',
+		'import/extensions': [ // only needed because of Webpack 5 and the idlize package
+			'error',
+			'never',
+			{
+				'ignorePackages: true,
+				'pattern': {
+					'mjs': 'always'
+				}
+			}
+		],
 		// No Node.js builtin modules
 		'import/no-nodejs-modules': 'error',
 		// Ensure imports point to a file/module that can be resolved
