@@ -17,7 +17,7 @@ module.exports = {
 			'error',
 			'never',
 			{
-				'ignorePackages: true,
+				'ignorePackages': true,
 				'pattern': {
 					'mjs': 'always'
 				}
