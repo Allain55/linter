@@ -30,12 +30,17 @@ module.exports = {
 	'jsdoc/require-jsdoc': [
 		'error',
 		{
+			// workaround so documentation for arrow functions inside objects won't be required
+			'contexts': [
+				'VariableDeclarator > ArrowFunctionExpression',
+				'ClassProperty > ArrowFunctionExpression',
+			],
 			'enableFixer': false,
 			'exemptEmptyFunctions': true,
 			'require': {
 				'ClassDeclaration': false,
 				'ClassExpression': true,
-				'ArrowFunctionExpression': true,
+				'ArrowFunctionExpression': false,  // Disable to allow the more limited `contexts` to be applied
 				'FunctionExpression': true,
 				'MethodDefinition': true
 			}
