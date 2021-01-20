@@ -8,10 +8,5 @@ module.exports = {
 	'env': {
 		'node': true
 	},
-	'globals': {
-		'sails'    : true,
-		'logger'   : true,
-		'tinyUtils': true,
-	},
 	'rules': nodeJsRules
 };

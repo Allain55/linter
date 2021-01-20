@@ -3,8 +3,7 @@ module.exports = {
 		'./eslint_shared.config.js'
 	],
 	'env': {
-		'browser': true,
-		'jquery' : true
+		'browser': true
 	},
 	'parserOptions': {
 		'sourceType': 'module'

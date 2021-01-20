@@ -24,8 +24,9 @@ module.exports = {
 		'error',
 		'always'
 	],
+	'unicorn/numeric-separators-style': 'error',
 	'unicorn/no-process-exit': 'off', // rule already provided by the node plugin
-	'unicorn/prefer-replace-all': 'error',
+	'unicorn/prefer-string-replace-all': 'error',
 	'node/no-unpublished-require': 'off',
 	'jsdoc/require-jsdoc': [
 		'error',

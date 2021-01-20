@@ -62,7 +62,7 @@ module.exports = {
 	'no-sparse-arrays'        : 'error',
 	// disallow confusing multiline expressions
 	'no-unexpected-multiline': 'error',
-	// isallow unreachable code after return, throw, continue, and break statements
+	// disallow unreachable code after return, throw, continue, and break statements
 	'no-unreachable'          : 'error',
 	// disallow loops with a body that allows only one iteration
 	'no-unreachable-loop'          : 'error',
@@ -70,6 +70,8 @@ module.exports = {
 	'no-unsafe-finally'       : 'error',
 	// disallow negating the left operand of relational operators
 	'no-unsafe-negation': 'error',
+	// disallow use of optional chaining in contexts where the `undefined` value is not allowed
+	'no-unsafe-optional-chaining': 'error',
 	// disallow assignments that can lead to race conditions due to usage of await or yield
 	'require-atomic-updates': 'error',
 	//  require calls to isNaN() when checking for NaN

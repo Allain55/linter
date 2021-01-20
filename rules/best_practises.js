@@ -87,6 +87,8 @@ module.exports = {
 	'no-lone-blocks': 'error',
 	// disallow function declarations and expressions inside loop statements
 	'no-loop-func': 'error',
+	// disallow magic numbers
+	'no-magic-numbers': 'warn',
 	// disallow multiple spaces
 	'no-multi-spaces': [
 		'error',
