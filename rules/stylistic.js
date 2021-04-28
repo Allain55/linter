@@ -233,7 +233,10 @@ module.exports = {
 	],
 	// disallow trailing whitespace at the end of lines
 	'no-trailing-spaces': [
-		'error'
+		'error',
+		{
+			'skipBlankLines': true
+		}
 	],
 	// disallow ternary operators when simpler alternatives exist
 	'no-unneeded-ternary': [
