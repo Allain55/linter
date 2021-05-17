@@ -72,6 +72,7 @@ module.exports = {
 		],
 		//todo: this rule needs improvements, check it later
 		'unicorn/consistent-destructuring': 'off',
+		'unicorn/explicit-length-check': 'off',
 		'unicorn/filename-case': [
 			'error',
 			{
@@ -82,6 +83,7 @@ module.exports = {
 			}
 		],
 		'unicorn/no-array-callback-reference': 'off',
+		'unicorn/no-array-for-each': 'off',
 		'unicorn/no-array-reduce': 'off',
 		'unicorn/no-fn-reference-in-iterator': 'off',
 		'unicorn/no-null': 'off',
@@ -89,10 +91,11 @@ module.exports = {
 		'unicorn/no-unreadable-array-destructuring': 'error',
 		'unicorn/no-useless-undefined': 'off',
 		'unicorn/prefer-number-properties': 'off',
+		'unicorn/prefer-switch': 'off',
 		'unicorn/prefer-ternary': 'off',
 		'unicorn/prefer-trim-start-end': 'error',
 		'unicorn/prevent-abbreviations': 'off',
-		'unicorn/explicit-length-check': 'off',
+		'unicorn/no-this-assignment': 'off',
 
 		'jsdoc/check-alignment': 'error',
 		'jsdoc/check-examples': 'error',
