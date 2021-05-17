@@ -70,7 +70,7 @@ module.exports = {
 				'name': 'err'
 			}
 		],
-		//todo: this doesn't seem t work well
+		//todo: this rule needs improvements, check it later
 		'unicorn/consistent-destructuring': 'off',
 		'unicorn/filename-case': [
 			'error',

@@ -1,5 +1,7 @@
 module.exports = {
-	// disallow initializing variables to `undefined`
+	// todo deprecated rule
+	'no-process-exit': 'off',
+	// disallow the use of undeclared variables unless mentioned in `/*global */` comments
 	'no-undef': 'error',
 	// disallow deprecated APIs
 	'node/no-deprecated-api': 'error',
