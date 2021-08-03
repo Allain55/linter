@@ -23,7 +23,7 @@ module.exports = {
 	},
 	'parser': 'babel-eslint',
 	'parserOptions': {
-		'ecmaVersion': 2021
+		'ecmaVersion': 'latest'
 	},
 	'rules': {
 		...possibleErrors,
