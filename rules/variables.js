@@ -21,7 +21,7 @@ module.exports = {
 		{
 			'vars': 'all',
 			'args': 'after-used',
-			"varsIgnorePattern": "^_"
+			"varsIgnorePattern": '^_\\w+' // matches variables starting with "_" but not equals to "_". This is how typescript checks them
 		}
 	],
 	// disallow the use of variables before they are defined

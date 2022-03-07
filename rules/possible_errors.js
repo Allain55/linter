@@ -72,6 +72,8 @@ module.exports = {
 	'no-unsafe-negation': 'error',
 	// disallow use of optional chaining in contexts where the `undefined` value is not allowed
 	'no-unsafe-optional-chaining': 'error',
+	// disallow unused private class members
+	'no-unused-private-class-members': 'error',
 	// disallow assignments that can lead to race conditions due to usage of await or yield
 	'require-atomic-updates': 'error',
 	//  require calls to isNaN() when checking for NaN

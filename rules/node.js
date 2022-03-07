@@ -1,8 +1,9 @@
 module.exports = {
-	// todo deprecated rule
-	'no-process-exit': 'off',
+	'no-process-exit': 'off', // todo deprecated rule and enabled but already provided by the node plugin
 	// disallow the use of undeclared variables unless mentioned in `/*global */` comments
 	'no-undef': 'error',
+	// disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`
+	'prefer-object-has-own': 'error',
 	// disallow deprecated APIs
 	'node/no-deprecated-api': 'error',
 	// require require() calls to be placed at top-level module scope

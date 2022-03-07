@@ -1,6 +1,6 @@
 {
   "name": "@allain55/linter",
-  "version": "3.6.0",
+  "version": "4.0.0",
   "description": "Allain55's personal ESLint config",
   "author": "Gergő Lengyel",
   "repository": {
@@ -9,12 +9,12 @@
   },
   "license": "MIT",
   "dependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsdoc": "^36.0.6",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsdoc": "^37.9.7",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-unicorn": "^34.0.1"
+    "eslint-plugin-unicorn": "^41.0.0"
   },
   "engines": {
     "node": ">=14.0"

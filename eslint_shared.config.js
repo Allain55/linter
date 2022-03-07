@@ -21,7 +21,7 @@ module.exports = {
 			}
 		}
 	},
-	'parser': 'babel-eslint',
+	'parser': '@typescript-eslint/parser',
 	'parserOptions': {
 		'ecmaVersion': 'latest'
 	},
@@ -98,7 +98,8 @@ module.exports = {
 		'unicorn/no-this-assignment': 'off',
 
 		'jsdoc/check-alignment': 'error',
-		'jsdoc/check-examples': 'error',
+		// todo this can be enabled after this is fixed: https://github.com/eslint/eslint/issues/14745
+		// 'jsdoc/check-examples': 'error',
 		'jsdoc/check-indentation': 'error',
 		'jsdoc/check-param-names': 'error',
 		'jsdoc/check-property-names': 'error',

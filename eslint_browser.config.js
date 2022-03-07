@@ -6,7 +6,6 @@ module.exports = {
 		'browser': true
 	},
 	'parserOptions': {
-		'ecmaVersion': 2021, // todo remove this to use the default "latest" when it's fixed
 		'sourceType': 'module'
 	},
 	'rules': {
