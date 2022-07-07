@@ -90,6 +90,7 @@ module.exports = {
 		'unicorn/no-reduce': 'off',
 		'unicorn/no-unreadable-array-destructuring': 'error',
 		'unicorn/no-useless-undefined': 'off',
+		'unicorn/prefer-event-target': 'off',
 		'unicorn/prefer-number-properties': 'off',
 		'unicorn/prefer-switch': 'off',
 		'unicorn/prefer-ternary': 'off',

@@ -26,8 +26,6 @@ module.exports = {
 	],
 	// disallow reassigning class members
 	'no-class-assign': 'error',
-	// disallow reassigning const variables
-	'no-const-assign': 'error',
 	// disallow duplicate class members
 	'no-dupe-class-members': 'error',
 	// disallow duplicate module imports

@@ -12,6 +12,10 @@ module.exports = {
 		'error',
 		'except-parens'
 	],
+	// disallow reassigning const variables
+	'no-const-assign': 'error',
+	// Disallow expressions where the operation doesn't affect the value
+	'no-constant-binary-expression': 'error',
 	// disallow constant expressions in conditions: if (true)
 	'no-constant-condition'   : 'error',
 	// disallow the use of debugger: debugger;
@@ -36,6 +40,8 @@ module.exports = {
 	'no-extra-semi'           : 'error',
 	// disallow reassigning function declarations
 	'no-func-assign': 'error',
+	// disallow characters which are made with multiple code points in character class syntax
+	'no-misleading-character-class': 'error',
 	// disallow assigning to imported bindings
 	'no-import-assign': [
 		'error'
