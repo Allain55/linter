@@ -255,7 +255,8 @@ module.exports = {
 	],
 	// enforce consistent spacing inside braces
 	'object-curly-spacing': [
-		'error'
+		'error',
+		'never'
 	],
 	// enforce variables to be declared either together or separately in functions
 	'one-var': [

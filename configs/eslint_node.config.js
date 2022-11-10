@@ -1,4 +1,4 @@
-const nodeJsRules = require('./rules/node');
+const nodeJsRules = require('../rules/node');
 
 module.exports = {
 	'extends': [

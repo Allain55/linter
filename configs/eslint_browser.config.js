@@ -5,8 +5,8 @@ module.exports = {
 	'env': {
 		'browser': true
 	},
-	'parserOptions': {
-		'sourceType': 'module'
+	'globals': {
+		'dataLayer': true
 	},
 	'rules': {
 		'prefer-named-capture-group': 'off', // bad support and no transpile available
@@ -22,6 +22,12 @@ module.exports = {
 				}
 			}
 		],
+		'import/no-extraneous-dependencies': [
+			'error',
+			{
+				'devDependencies': true
+			}
+		],
 		// No Node.js builtin modules
 		'import/no-nodejs-modules': 'error',
 		// Ensure imports point to a file/module that can be resolved
@@ -33,6 +39,7 @@ module.exports = {
 				]
 			}
 		],
+		'import/prefer-default-export': 'off',
 		'unicorn/prefer-set-has': 'off'
 	}
 };

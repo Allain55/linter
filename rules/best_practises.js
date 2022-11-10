@@ -38,6 +38,8 @@ module.exports = {
 		'error',
 		'getBeforeSet'
 	],
+	// require or disallow logical assignment logical operator shorthand
+	'logical-assignment-operators': ['error', 'always'],
 	// enforce a maximum number of classes per file
 	'max-classes-per-file': ['error', 1],
 	// disallow the use of alert, confirm, and prompt
@@ -52,6 +54,8 @@ module.exports = {
 	'no-else-return': 'error',
 	// disallow empty destructuring patterns
 	'no-empty-pattern': 'error',
+	// Disallow empty static blocks
+	'no-empty-static-block': 'error',
 	// disallow null comparisons without type-checking operators
 	'no-eq-null': 'error',
 	// disallow empty functions
@@ -110,7 +114,13 @@ module.exports = {
 	// disallow octal escape sequences in string literals
 	'no-octal-escape': 'error',
 	// disallow reassigning function parameters
-	'no-param-reassign': 'error',
+	'no-param-reassign': [
+		'error',
+		{
+			//todo enable this later and fix where needed
+			'props': false
+		}
+	],
 	// disallow the use of the __proto__ property
 	'no-proto': 'error',
 	// disallow var redeclaration

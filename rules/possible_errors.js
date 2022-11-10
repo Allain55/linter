@@ -56,6 +56,8 @@ module.exports = {
 	'no-obj-calls'            : 'error',
 	// disallow literal numbers that lose precision
 	'no-loss-of-precision'    : 'error',
+	// Disallow new operators with global non-constructor functions
+	'no-new-native-nonconstructor'    : 'error',
 	// disallow returning values from Promise executor functions
 	'no-promise-executor-return': 'error',
 	// disallow use of Object.prototypes builtins directly
