@@ -78,6 +78,8 @@ module.exports = {
 		'error',
 		'never'
 	],
+	//todo enable this if there's a good solution to skip class inheritance cases
+	// 'require-await': 'error',
 	// require symbol descriptions
 	'symbol-description': 'error',
 	// require or disallow spacing around embedded expressions of template strings

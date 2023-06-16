@@ -15,7 +15,6 @@ module.exports = {
 	],
 	'settings': {
 		'jsdoc': {
-			'mode': 'typescript',
 			'preferredTypes': {
 				'object': 'Object'
 			}
@@ -70,7 +69,6 @@ module.exports = {
 				'name': 'err'
 			}
 		],
-		//todo: this rule needs improvements, check it later
 		'unicorn/consistent-destructuring': 'off',
 		'unicorn/explicit-length-check': 'off',
 		'unicorn/filename-case': [
@@ -88,8 +86,11 @@ module.exports = {
 		'unicorn/no-fn-reference-in-iterator': 'off',
 		'unicorn/no-null': 'off',
 		'unicorn/no-reduce': 'off',
+		'unicorn/no-typeof-undefined': 'off',
 		'unicorn/no-unreadable-array-destructuring': 'error',
 		'unicorn/no-useless-undefined': 'off',
+		// todo enable this later
+		'unicorn/prefer-at': 'off',
 		'unicorn/prefer-event-target': 'off',
 		'unicorn/prefer-number-properties': 'off',
 		'unicorn/prefer-query-selector': 'off',
@@ -98,11 +99,13 @@ module.exports = {
 		'unicorn/prefer-trim-start-end': 'error',
 		'unicorn/prevent-abbreviations': 'off',
 		'unicorn/no-this-assignment': 'off',
-
+		
 		'jsdoc/check-alignment': 'error',
 		// todo this can be enabled after this is fixed: https://github.com/eslint/eslint/issues/14745
 		// 'jsdoc/check-examples': 'error',
 		'jsdoc/check-indentation': 'error',
+		//todo: enable it later when auto fixing will be supported
+		// 'jsdoc/check-line-alignment': 'error',
 		'jsdoc/check-param-names': 'error',
 		'jsdoc/check-property-names': 'error',
 		'jsdoc/check-syntax': 'error',
@@ -114,10 +117,13 @@ module.exports = {
 		// 'jsdoc/no-undefined-types': 'error',
 		'jsdoc/require-param': 'error',
 		'jsdoc/require-param-name': 'error',
+		'jsdoc/require-param-type': 'error',
 		'jsdoc/require-property': 'error',
+		'jsdoc/require-property-type': 'error',
 		'jsdoc/require-returns': 'error',
 		'jsdoc/require-returns-check': 'error',
 		'jsdoc/require-returns-type': 'error',
+		'jsdoc/sort-tags': 'error',
 		'jsdoc/valid-types': 'error'
 	}
 };

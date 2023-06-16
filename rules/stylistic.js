@@ -211,7 +211,10 @@ module.exports = {
 	],
 	// disallow multiple empty lines
 	'no-multiple-empty-lines': [
-		'error'
+		'error',
+		{
+			'max': 1
+		}
 	],
 	// disallow negated conditions
 	'no-negated-condition': [
@@ -258,6 +261,10 @@ module.exports = {
 		'error',
 		'never'
 	],
+	'object-shorthand': [
+		'error',
+		'properties',
+	],
 	// enforce variables to be declared either together or separately in functions
 	'one-var': [
 		'error',
@@ -288,7 +295,7 @@ module.exports = {
 		},
 		{
 			'blankLine': 'always',
-			'prev': ['for', 'if', 'try'],
+			'prev': ['for', 'if', 'try', 'let', 'const', 'class'],
 			'next': '*'
 		}
 	],

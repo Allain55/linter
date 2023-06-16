@@ -100,7 +100,6 @@ module.exports = {
 			'exceptions': {
 				'Property'            : true,
 				'VariableDeclarator'  : true,
-				'ImportDeclaration'   : true,
 				'AssignmentExpression': true
 			}
 		}
@@ -168,6 +167,8 @@ module.exports = {
 	'require-unicode-regexp': [
 		'error'
 	],
+	// require var declarations be placed at the top of their containing scope
+	'vars-on-top': 'error',
 	// require parentheses around immediate function invocations
 	'wrap-iife': [
 		'error',
