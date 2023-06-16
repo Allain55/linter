@@ -1,6 +1,6 @@
 {
   "name": "@allain55/linter",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "Allain55's personal ESLint config",
   "author": "Gergő Lengyel",
   "repository": {
@@ -20,6 +20,6 @@
     "eslint-plugin-unicorn": "^47.0.0"
   },
   "engines": {
-    "node": ">=14.0"
+    "node": ">=16.0"
   }
 }
