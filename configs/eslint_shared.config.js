@@ -1,9 +1,10 @@
-const bestPractises  = require('../rules/best_practises'),
-	  possibleErrors = require('../rules/possible_errors'),
-	  variables 	 = require('../rules/variables'),
-	  strictRules 	 = require('../rules/strict_mode'),
-	  stylistic 	 = require('../rules/stylistic'),
-	  es6Rules 		 = require('../rules/ecmascript_6');
+const eslintPluginImportExportsImportsResolver = require.resolve('eslint-plugin-import-exports-imports-resolver'),
+      bestPractises                            = require('../rules/best_practises'),
+      possibleErrors                           = require('../rules/possible_errors'),
+	  variables 	                           = require('../rules/variables'),
+	  strictRules 	                           = require('../rules/strict_mode'),
+	  stylistic 	                           = require('../rules/stylistic'),
+	  es6Rules 		                           = require('../rules/ecmascript_6');
 
 module.exports = {
 	'extends': [
@@ -14,6 +15,11 @@ module.exports = {
 		'jsdoc'
 	],
 	'settings': {
+		//todo remove this setting and the extra plugin after package imports support is done: https://github.com/import-js/eslint-plugin-import/issues/1810
+		'import/resolver': {
+			node: {},
+			[eslintPluginImportExportsImportsResolver]: {},
+		},
 		'jsdoc': {
 			'preferredTypes': {
 				'object': 'Object'

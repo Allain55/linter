@@ -1,6 +1,6 @@
 {
   "name": "@allain55/linter",
-  "version": "5.1.0",
+  "version": "5.2.0",
   "description": "Allain55's personal ESLint config",
   "author": "Gergő Lengyel",
   "repository": {
@@ -13,6 +13,7 @@
     "eslint": "^8.42.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import-exports-imports-resolver": "^1.0.1",
     "eslint-plugin-jsdoc": "^46.2.6",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.32.2",
