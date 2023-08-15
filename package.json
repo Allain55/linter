@@ -1,6 +1,6 @@
 {
   "name": "@allain55/linter",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "description": "Allain55's personal ESLint config",
   "author": "Gergő Lengyel",
   "repository": {
@@ -10,15 +10,15 @@
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/parser": "^5.59.11",
-    "eslint": "^8.42.0",
+    "eslint": "^8.47.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-import-exports-imports-resolver": "^1.0.1",
-    "eslint-plugin-jsdoc": "^46.2.6",
+    "eslint-plugin-jsdoc": "^46.4.6",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react": "^7.33.1",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-unicorn": "^47.0.0"
+    "eslint-plugin-unicorn": "^48.0.1"
   },
   "engines": {
     "node": ">=16.0"

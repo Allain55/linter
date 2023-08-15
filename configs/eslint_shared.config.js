@@ -65,8 +65,13 @@ module.exports = {
 		'import/no-named-default': 'error',
 		// Prevent unnecessary path segments in import and require statements
 		'import/no-useless-path-segments': 'error',
-		// Enforce a convention in module import order
-		'import/order': 'error',
+		// Enforce a convention in module import order (settings from airbnb)
+		'import/order': [
+			'error',
+			{
+				groups: ['builtin', 'external', 'internal']
+			}
+		],
 		
 		'unicorn/better-regex': 'error',
 		'unicorn/catch-error-name': [
