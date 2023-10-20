@@ -4,6 +4,21 @@ module.exports = {
 	'no-undef': 'error',
 	// disallow use of `Object.prototype.hasOwnProperty.call()` and prefer use of `Object.hasOwn()`
 	'prefer-object-has-own': 'error',
+	'import/dynamic-import-chunkname': 'off',
+	'jsdoc/require-jsdoc': [
+		'error',
+		{
+			'enableFixer': false,
+			'exemptEmptyFunctions': true,
+			'require': {
+				'ClassDeclaration': false,
+				'ClassExpression': true,
+				'ArrowFunctionExpression': true,
+				'FunctionExpression': true,
+				'MethodDefinition': true
+			}
+		}
+	],
 	// disallow deprecated APIs
 	'node/no-deprecated-api': 'error',
 	// require require() calls to be placed at top-level module scope
@@ -18,7 +33,6 @@ module.exports = {
 	'node/no-process-exit': 'error',
 	// disallow synchronous methods
 	'node/no-sync': 'error',
-	
 	'node/exports-style': [
 		'error',
 		'module.exports'
@@ -30,19 +44,5 @@ module.exports = {
 	'unicorn/numeric-separators-style': 'error',
 	'unicorn/no-process-exit': 'off', // rule already provided by the node plugin
 	'unicorn/prefer-module': 'off',
-	'node/no-unpublished-require': 'off',
-	'jsdoc/require-jsdoc': [
-		'error',
-		{
-			'enableFixer': false,
-			'exemptEmptyFunctions': true,
-			'require': {
-				'ClassDeclaration': false,
-				'ClassExpression': true,
-				'ArrowFunctionExpression': true,
-				'FunctionExpression': true,
-				'MethodDefinition': true
-			}
-		}
-	]
+	'node/no-unpublished-require': 'off'
 };
