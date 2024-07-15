@@ -101,8 +101,6 @@ module.exports = {
 		'unicorn/no-typeof-undefined': 'off',
 		'unicorn/no-unreadable-array-destructuring': 'error',
 		'unicorn/no-useless-undefined': 'off',
-		// todo enable this later
-		'unicorn/prefer-at': 'off',
 		'unicorn/prefer-event-target': 'off',
 		'unicorn/prefer-number-properties': 'off',
 		'unicorn/prefer-query-selector': 'off',
