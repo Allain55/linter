@@ -95,6 +95,7 @@ module.exports = {
 		'unicorn/no-array-for-each': 'off',
 		'unicorn/no-array-reduce': 'off',
 		'unicorn/no-fn-reference-in-iterator': 'off',
+		'unicorn/no-magic-array-flat-depth': 'off',
 		'unicorn/no-null': 'off',
 		'unicorn/no-reduce': 'off',
 		'unicorn/no-typeof-undefined': 'off',
