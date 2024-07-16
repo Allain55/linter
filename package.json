@@ -1,6 +1,6 @@
 {
   "name": "@allain55/linter",
-  "version": "5.7.0",
+  "version": "5.8.0",
   "description": "Allain55's personal ESLint config",
   "author": "Gergő Lengyel",
   "repository": {
@@ -15,7 +15,7 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-import-exports-imports-resolver": "^1.0.1",
     "eslint-plugin-jsdoc": "^48.7.0",
-    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-n": "^17.9.0",
     "eslint-plugin-react": "^7.34.3",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-unicorn": "^54.0.0"

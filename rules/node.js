@@ -19,30 +19,25 @@ module.exports = {
 			}
 		}
 	],
-	// disallow deprecated APIs
-	'node/no-deprecated-api': 'error',
-	// require require() calls to be placed at top-level module scope
-	'node/global-require': 'error',
 	// require error handling in callbacks
-	'node/handle-callback-err': 'error',
+	'n/handle-callback-err': 'error',
 	// disallow new operators with calls to require
-	'node/no-new-require': 'error',
+	'n/no-new-require': 'error',
 	// disallow string concatenation with __dirname and __filename
-	'node/no-path-concat': 'error',
-	// disallow the use of process.exit()
-	'node/no-process-exit': 'error',
+	'n/no-path-concat': 'error',
 	// disallow synchronous methods
-	'node/no-sync': 'error',
-	'node/exports-style': [
+	'n/no-sync': 'error',
+	// enforce module.exports
+	'n/exports-style': [
 		'error',
 		'module.exports'
 	],
-	'node/prefer-global/buffer': [
+	// enforce Buffer usage
+	'n/prefer-global/buffer': [
 		'error',
 		'always'
 	],
 	'unicorn/numeric-separators-style': 'error',
 	'unicorn/no-process-exit': 'off', // rule already provided by the node plugin
-	'unicorn/prefer-module': 'off',
-	'node/no-unpublished-require': 'off'
+	'unicorn/prefer-module': 'off'
 };
